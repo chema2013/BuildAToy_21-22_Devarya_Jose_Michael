@@ -8,7 +8,7 @@ public class CopyPosition : MonoBehaviour
     [SerializeField]
         Transform transTarget;
 
-    void Update()
+    void LateUpdate()
     {
         transform.position = transTarget.position;
     }
