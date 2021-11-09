@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathSlide.unity
     guid: 942ccea81e8687746a9bbc68c2d8edd2
+  - enabled: 1
+    path: Assets/Scenes/HoleMaze.unity
+    guid: 5c730561deb064c45aa02ce875cadfcf
   m_configObjects: {}
