@@ -17,7 +17,12 @@ public class MainMenu : MonoBehaviour
 
     public void HoleMaze()
     {
-        SceneManager.LoadScene("HoleMaze");
+        SceneManager.LoadScene("Holemaze3");
+    }
+
+    public void LaunchnDunk()
+    {
+        SceneManager.LoadScene("LaunchnDunk");
     }
 
     public void  QuitGame()
