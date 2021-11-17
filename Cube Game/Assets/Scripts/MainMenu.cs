@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("DeathSlide");
     }
 
-    public void HoleMaze()
+    public void HoleMaze3()
     {
         SceneManager.LoadScene("Holemaze3");
     }
