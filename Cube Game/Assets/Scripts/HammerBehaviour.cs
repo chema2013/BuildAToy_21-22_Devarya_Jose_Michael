@@ -6,35 +6,56 @@ public class HammerBehaviour : MonoBehaviour
 {
 
 
-    float speed = 80f; 
+    Quaternion _start, _End;
 
-    public float rotationLevelLeast;
+    [SerializeField, Range(0.0f, 360f)]
+    private float _angle = 90.0f;
 
-    public float rotationLevelMost;
+    [SerializeField, Range(0.0f, 5.0f)]
+    private float _speed = 2.0f;
 
-    public GameObject[] map;
-
-    public bool left;
-
-    public bool right;
+    [SerializeField, Range(0.0f, 10.0f)]
+    private float _startTime = 0.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
+       _start = PendulumRotation(_angle);
+       _End = PendulumRotation(-_angle);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.rotation.z > 90 && left == true)
-        {
-         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 50), speed * Time.deltaTime);
-        }
-        if (gameObject.transform.rotation.z < 270 && left == false)
-        {
-           transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, -50), speed * Time.deltaTime); 
-        }
-        
+
+    }
+
+
+    private void FixedUpdate()
+    {
+        _startTime += Time.deltaTime;
+        transform.rotation = Quaternion.Lerp(_start, _End, (Mathf.Sin(_startTime * _speed + Mathf.PI /2) + 1.0f) / 2.0f);
+    }
+
+
+    void ResetTimer()
+    {
+        _startTime = 0.0f;
+    }
+
+
+    Quaternion PendulumRotation(float angle)
+    {
+        var pendulumRotation = transform.rotation;
+        var angleZ = pendulumRotation.eulerAngles.z + angle;
+
+        if (angleZ > 180)
+        angleZ -= 360;
+        else if (angleZ < -180)
+        angleZ += 360;
+
+        pendulumRotation.eulerAngles = new Vector3(pendulumRotation.eulerAngles.x, pendulumRotation.eulerAngles.y, angleZ);
+        return pendulumRotation;
     }
 }
