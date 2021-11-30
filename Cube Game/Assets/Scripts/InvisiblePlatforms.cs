@@ -19,7 +19,7 @@ public class InvisiblePlatforms : MonoBehaviour
     void Update()
     {
 
-      if(Input.GetKey("e"))
+      if(Input.GetKey(KeyCode.LeftShift))
       {
 
           Ip.SetActive(true);
