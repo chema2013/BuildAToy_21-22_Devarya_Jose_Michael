@@ -16,6 +16,8 @@ public class Timer : MonoBehaviour
 
     string jj;
 
+    float kk;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,13 +35,15 @@ public class Timer : MonoBehaviour
 
         float t = Time.time - startTime;
 
-        string minutes = ((int) t / 60).ToString();
+        int minutes = ((int) t / 60);
 
-        string seconds = (t % 60).ToString("f2");
+        float seconds = (t % 60);
         
-        timerText.text = minutes + ":" + seconds;
+        timerText.text = (minutes + ":" + seconds).ToString();
 
         jj = timerText.text;
+
+        kk = seconds;
     }
 
     public void Finish()
@@ -47,8 +51,12 @@ public class Timer : MonoBehaviour
         finished = true;
         timerText.color = Color.yellow;
 
-        PlayerPrefs.SetString("BestTime", jj);
-
-
+        if(kk > PlayerPrefs.GetFloat("BestTime", 0))
+        {
+            PlayerPrefs.SetString("BestTime", jj);
+            bestTime.text = jj.ToString();
+            PlayerPrefs.SetFloat("BestTime", kk);
+        }
+        
     }
 }
