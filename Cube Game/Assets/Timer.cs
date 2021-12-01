@@ -18,13 +18,15 @@ public class Timer : MonoBehaviour
 
     float kk;
 
+    public bool reset = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
 
-        bestTime.text = PlayerPrefs.GetString("BestTime", "0");
+        bestTime.text = PlayerPrefs.GetString("BestTime", "0").ToString();
     }
 
     // Update is called once per frame
@@ -43,7 +45,6 @@ public class Timer : MonoBehaviour
 
         jj = timerText.text;
 
-        kk = seconds;
     }
 
     public void Finish()
@@ -51,12 +52,11 @@ public class Timer : MonoBehaviour
         finished = true;
         timerText.color = Color.yellow;
 
-        if(kk > PlayerPrefs.GetFloat("BestTime", 0))
-        {
-            PlayerPrefs.SetString("BestTime", jj);
+        
+            PlayerPrefs.SetString("BestTime",jj);
             bestTime.text = jj.ToString();
-            PlayerPrefs.SetFloat("BestTime", kk);
-        }
+
+            
         
     }
 }
