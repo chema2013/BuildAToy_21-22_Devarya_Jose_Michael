@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class TerrainRotation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float rotationSpeed = 1f;
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDrag()
     {
-        
+        float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
+        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
+
+        transform.Rotate(Vector3.down, XaxisRotation);
+        transform.Rotate(Vector3.right, YaxisRotation);
     }
 }
