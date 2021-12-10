@@ -9,27 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Unused/Cube game.unity
     guid: f42832a89eba57748acf612581510ac0
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/Menu/Main Menu.unity
     guid: 641bcf471de65d64783f5ae4fc996069
   - enabled: 1
-    path: Assets/Scenes/dont fall in lava.unity
+    path: Assets/Scenes/Don't fall in lava/dont fall in lava.unity
     guid: f89637ec67db32742b232f23c3961609
   - enabled: 1
-    path: Assets/Scenes/DeathSlide.unity
+    path: Assets/Scenes/DeathSlide/DeathSlide.unity
     guid: 942ccea81e8687746a9bbc68c2d8edd2
   - enabled: 1
-    path: Assets/Scenes/Deathslide 2.unity
+    path: Assets/Scenes/Deathslide 2/Deathslide 2.unity
     guid: a81df964ca9b55d4db9ca06bad30f52b
   - enabled: 1
-    path: Assets/Scenes/Deathslide 3.unity
+    path: Assets/Scenes/Deathslide 3/Deathslide 3.unity
     guid: 3ef400f77c88ea94f893a26e66cb6d8c
   - enabled: 1
-    path: Assets/Scenes/Holemaze3.unity
+    path: Assets/Scenes/HoleMaze/Holemaze.unity
     guid: 837ef2f070b2277459befdd6de4d002e
   - enabled: 1
-    path: Assets/Scenes/LaunchnDunk.unity
+    path: Assets/Scenes/LaunchnDunk/LaunchnDunk.unity
     guid: 4fb2e3f2f55f3714696ebb719ccecbab
   - enabled: 0
-    path: Assets/Scenes/testscene2.unity
+    path: Assets/Scenes/test/testscene2.unity
     guid: ba93a12be94546d449f3601f1d085682
   m_configObjects: {}
