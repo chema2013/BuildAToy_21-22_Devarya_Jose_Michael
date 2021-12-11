@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2 : MonoBehaviour
+public class Level2deathslide : MonoBehaviour
 {
     [SerializeField]
     string strTag;

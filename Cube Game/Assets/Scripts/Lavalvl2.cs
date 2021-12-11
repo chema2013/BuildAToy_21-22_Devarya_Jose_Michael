@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level3deathslide : MonoBehaviour
+public class Lavalvl2 : MonoBehaviour
 {
     [SerializeField]
     string strTag;
@@ -11,6 +11,6 @@ public class Level3deathslide : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == strTag)
-            SceneManager.LoadScene("Deathslide 3");
+            SceneManager.LoadScene("Dont fall in lava 2");
     }
 }
