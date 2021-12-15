@@ -20,9 +20,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Holemaze");
     }
 
-    public void LaunchnDunk()
+    public void DeathSlide4()
     {
-        SceneManager.LoadScene("LaunchnDunk");
+        SceneManager.LoadScene("Deathslide 4");
     }
 
     public void  QuitGame()
