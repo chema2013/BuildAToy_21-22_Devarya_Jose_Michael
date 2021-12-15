@@ -8,6 +8,7 @@ TagManager:
   - Invisible
   - power
   - IceFloor
+  - pills
   layers:
   - Default
   - TransparentFX
