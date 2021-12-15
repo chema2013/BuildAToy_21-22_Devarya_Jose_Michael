@@ -7,6 +7,8 @@ public class Checkpoint : MonoBehaviour
     public Transform checkpoint;
     GameObject player;
 
+    public Rigidbody momentum;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -18,6 +20,10 @@ public class Checkpoint : MonoBehaviour
         {
             player.transform.position = checkpoint.position;
             player.transform.rotation = checkpoint.rotation;
+            
+
+            momentum.velocity = Vector3.zero;
+            momentum.angularVelocity = Vector3.zero;
         }
     }
     
