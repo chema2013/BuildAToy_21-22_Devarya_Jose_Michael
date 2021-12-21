@@ -46,6 +46,12 @@ public class playSound : MonoBehaviour
             audioData = sounds[3]; 
             audioData.Play(0);
         }
+
+        if (collision.gameObject.tag == "IceFloor")
+        {
+            audioData = sounds[5];
+            audioData.Play(0);
+        }
     }
 
     void OnTriggerEnter(Collider other)
