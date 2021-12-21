@@ -10,6 +10,7 @@ TagManager:
   - IceFloor
   - pills
   - obstacle
+  - Death
   layers:
   - Default
   - TransparentFX

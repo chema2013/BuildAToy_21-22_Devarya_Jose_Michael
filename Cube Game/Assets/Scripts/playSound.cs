@@ -28,5 +28,27 @@ public class playSound : MonoBehaviour
             audioData = sounds[0]; 
             audioData.Play(0);
         }
+
+        if (collision.gameObject.tag == "power")
+        {
+            audioData = sounds[2]; 
+            audioData.Play(0);
+        }
+
+        if (collision.gameObject.tag == "Death")
+        {
+            audioData = sounds[1]; 
+            audioData.Play(0);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.tag == "Death")
+        {
+            audioData = sounds[1]; 
+            audioData.Play(0);
+        }
     }
 }
