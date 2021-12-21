@@ -9,6 +9,7 @@ TagManager:
   - power
   - IceFloor
   - pills
+  - obstacle
   layers:
   - Default
   - TransparentFX
