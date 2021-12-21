@@ -12,6 +12,7 @@ TagManager:
   - obstacle
   - Death
   - boost
+  - coins
   layers:
   - Default
   - TransparentFX

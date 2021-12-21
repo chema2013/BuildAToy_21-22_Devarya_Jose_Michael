@@ -56,5 +56,11 @@ public class playSound : MonoBehaviour
             audioData = sounds[1]; 
             audioData.Play(0);
         }
+
+        if (other.gameObject.tag == "coins")
+        {
+            audioData = sounds[4]; 
+            audioData.Play(0);
+        }
     }
 }
