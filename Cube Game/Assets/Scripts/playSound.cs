@@ -40,6 +40,12 @@ public class playSound : MonoBehaviour
             audioData = sounds[1]; 
             audioData.Play(0);
         }
+
+        if (collision.gameObject.tag == "boost")
+        {
+            audioData = sounds[3]; 
+            audioData.Play(0);
+        }
     }
 
     void OnTriggerEnter(Collider other)
