@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: 641bcf471de65d64783f5ae4fc996069
   - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene.unity
+    guid: 06db2490babfcc6459cb3e22d2407916
+  - enabled: 1
+    path: Assets/Scenes/gameWorld/world.unity
+    guid: e1a1b03203bd4d34fb09e373f3d66ea9
+  - enabled: 1
     path: Assets/Scenes/Don't fall in lava/dont fall in lava.unity
     guid: f89637ec67db32742b232f23c3961609
   - enabled: 1
