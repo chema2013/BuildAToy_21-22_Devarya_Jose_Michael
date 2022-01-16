@@ -11,6 +11,6 @@ public class Lavalvl2 : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == strTag)
-            SceneManager.LoadScene("Dont fall in lava 2");
+            SceneManager.LoadScene("DeathSlide");
     }
 }
