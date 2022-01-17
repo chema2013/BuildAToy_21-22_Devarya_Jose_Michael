@@ -15,6 +15,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void FirstLevel()
+    {
+        SceneManager.LoadScene("dont fall in lava");
+    }
+
+    public void SecondLevel()
+    {
+        SceneManager.LoadScene("Deathslide");
+    }
+
     public void GameWorld()
     {
         SceneManager.LoadScene("world");
