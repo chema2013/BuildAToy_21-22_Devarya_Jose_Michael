@@ -25,6 +25,21 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Deathslide");
     }
 
+    public void ThirdLevel()
+    {
+        SceneManager.LoadScene("Deathslide 2");
+    }
+
+    public void fourthLevel()
+    {
+        SceneManager.LoadScene("dont fall in lava 2");
+    }
+
+    public void fifthLevel()
+    {
+        SceneManager.LoadScene("Holemaze");
+    }
+
     public void GameWorld()
     {
         SceneManager.LoadScene("world");
