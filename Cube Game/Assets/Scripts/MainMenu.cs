@@ -45,6 +45,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Credits");
     }
 
+     public void final()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void GameWorld()
     {
         SceneManager.LoadScene("world");
