@@ -40,6 +40,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Holemaze");
     }
 
+    public void credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void GameWorld()
     {
         SceneManager.LoadScene("world");
