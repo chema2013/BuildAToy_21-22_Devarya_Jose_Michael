@@ -11,6 +11,6 @@ public class Level2deathslide : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == strTag)
-            SceneManager.LoadScene("Deathslide 2");
+            SceneManager.LoadScene("world3");
     }
 }
