@@ -47,4 +47,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/test/testscene2.unity
     guid: ba93a12be94546d449f3601f1d085682
+  - enabled: 1
+    path: Assets/Scenes/gameWorld/world2.unity
+    guid: 09499a7422ce2b84fb9cf43b5edc3581
+  - enabled: 1
+    path: Assets/Scenes/gameWorld/world3.unity
+    guid: aa5ca5a0582f1fe4b8f9b4471ebb0fee
+  - enabled: 1
+    path: Assets/Scenes/gameWorld/world4.unity
+    guid: 03574da3a59f81a44affe1fc50f95fe8
+  - enabled: 1
+    path: Assets/Scenes/gameWorld/world5.unity
+    guid: a3585ef7ada9c1d4bb370572c204d415
   m_configObjects: {}
