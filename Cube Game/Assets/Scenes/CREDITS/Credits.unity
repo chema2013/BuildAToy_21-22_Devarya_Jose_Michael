@@ -2377,7 +2377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: an University of Applied Sciences Europe  project
+  m_text: a University of europe for applied sciences project
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e27cf62c194f71d4a8b0bae7f498fcec, type: 2}
   m_sharedMaterial: {fileID: 1765460528033076243, guid: e27cf62c194f71d4a8b0bae7f498fcec, type: 2}
