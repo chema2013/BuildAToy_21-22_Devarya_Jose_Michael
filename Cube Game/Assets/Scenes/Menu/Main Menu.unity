@@ -2588,7 +2588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DEATHSLIDE 2
+  m_text: old deathslide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e27cf62c194f71d4a8b0bae7f498fcec, type: 2}
   m_sharedMaterial: {fileID: 1765460528033076243, guid: e27cf62c194f71d4a8b0bae7f498fcec, type: 2}
